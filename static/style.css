@@ -1,0 +1,80 @@
+body {
+margin-left:auto;
+margin-right:auto;
+width: 420px;
+background: #D2E9FF;
+padding: 20px 20px 20px 20px;
+font: 12px Arial, Helvetica, sans-serif;
+color: #666;
+}
+
+select {
+color: #888;
+background: #FBFBFB;
+outline: 0;
+-webkit-box-shadow:inset 0px 1px 6px #ECF3F5;
+box-shadow: inset 0px 1px 6px #ECF3F5;
+font: 200 12px/25px Arial, Helvetica, sans-serif;
+height: 30px;
+line-height:15px;
+margin: 2px 6px 16px 0px;
+}
+
+button{
+padding: 10px 0px 10px 0px;
+background: #66C1E4;
+border: none;
+color: #FFF;
+box-shadow: 1px 1px 1px #4C6E91;
+-webkit-box-shadow: 1px 1px 1px #4C6E91;
+-moz-box-shadow: 1px 1px 1px #4C6E91;
+text-shadow: 1px 1px 1px #5079A3;
+}
+button:hover{
+background: #3EB1DD;
+}
+
+.div_select{
+    width: 100%;
+    margin: 0px auto;
+}
+.div_select select{
+    width: 85px;
+}
+.div_select button{
+    margin-left: 5px;
+}
+
+.show_div{
+    width: 100%;
+    margin: 0px auto;
+}
+
+.div_for_all>label{
+    width: 70px;
+    text-align: right;
+}
+.div_for_all>select{
+    width: 350px;
+}
+
+.div_time{
+    overflow: hidden;
+}
+.div_time>div{
+    float: left;
+    width: 200px;
+}
+.div_time>div:first-child{
+    margin-right: 8px;
+}
+.div_time input{
+    width: 120px;
+}
+.btn_submit{
+    width: 100px;
+    margin: 25px auto 0px;
+}
+.btn_submit button{
+    width: 100px;
+}

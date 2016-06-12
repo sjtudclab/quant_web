@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="options.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>策略选择</title>
+</head>
+<body>
+<div class="div_select">
+
+    <label for="strategyType">选择策略类型</label>
+    <select id="strategyType" onchange="strategyTypeChange(this.value)">
+        <option value="stockPicking" selected="True">选股</option>
+        <option value="marketTiming">择时</option>
+        <!-- <option value="interestArbitrage">套利</option> -->
+    </select>
+
+    <label for="strategyName">选择策略名</label>
+    <select id="strategyName" onchange="strategyNameChange(this.value)">
+        <option value="multiFactor">多因子</option>
+        <option value="styleRotation">风格轮动</option>
+        <option value="contrarianAndMomentum">动量反转</option>
+        <option value="consensusExpectation">一致预期</option>
+        <option value="chipTheory">筹码理论</option>
+        <option value="svm" style="display: none">SVM</option>
+        <option value="hurst" style="display: none">Hurst指数</option>
+        <option value="averageBreak" style="display: none">均线突破</option>
+        <option value="sentimentTiming" style="display: none">情绪择时</option>
+    </select>
+    <button type="button" onclick="showParams()" style="width: 15%">确定策略</button>
+</div>
+
+
+<div id="params" style="display: none" class="show_div">
+
+    <div class="div_for_all">
+        <label for="indicator1">指标1：</label>
+        <select id="indicator1"></select>
+    </div>
+    <div class="div_for_all">
+        <label for="indicator2">指标2：</label>
+        <select id="indicator2"></select>
+    </div>
+    <div class="div_for_all">
+        <label for="period">&nbsp;&nbsp;周期：</label>
+        <select id="period"></select>
+    </div>
+    <div class="div_for_all">
+        <label for="subject">&nbsp;&nbsp;品种：</label>
+        <select id="subject"></select>
+    </div>
+
+    <div class="div_time">
+        <div>
+            <label for="startTime">开始时间：</label>
+            <input id="startTime" type="date"/>
+        </div>
+        <div>
+            <label for="endTime">结束时间：</label>
+            <input id="endTime" type="date"/>
+        </div>
+    </div>
+
+
+    <div class="btn_submit">
+        <button type="button" onclick="submit()">提交</button>
+    </div>
+</div>
+</body>
+</html>
